@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Responsive Travel Form</title>
+        
+        <!-- Css stylesheets-->
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+        <link rel="stylesheet" href="css/form.css" type="text/css">
+        
+        <!-- Javascript - J-Query -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+        <script src="js/js.js"></script>
+        
+        <!--Svg Icons -->
+        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        
+        <meta name="handheldfriendly" content="true">
+        <meta name="mobileoptimized" content="240">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    
+    <body>
+        <div class="wrapper">
+        
+            <header class="masthead">
+                <div class="clouds"></div>
+                <div class="logo"></div>
+                <h1>Enter to Travel </h1>
+                
+                <h2>TRAVEL ON YOUR TERMS</h2>
+                <p>Just fill in some information for us below, and we will find you a trip suited to your needs.</p>
+
+            </header>
+            
+            <section class="main">
+                <div class="formRap">
+                    <form name="travelForm" id="travelForm" action="#" method="post" enctype="application/x-www-form-urlencoded">
+                        
+                        <div class="formBox" id="departure">
+                            <label for="departure">
+                                <div class="fa fa-home home"></div>
+                                <input type="text" name="departure" placeholder="departure city" />
+                            </label>
+                        </div>
+                        <div class="formBox" id="destination">
+                            <label for="destination">
+                            	<div class="fa fa-building"></div>
+                            	<input type="text" name="destination" placeholder="destination city" />
+                            </label>
+                        </div>
+                        
+                        <div class="formBox" id="departure_dt">
+                            <label for="departure_dt">
+                                <div class="fa fa-calendar"></div>
+                                <input type="date" name="departure_dt" placeholder="" />
+                            </label>
+                        </div>
+                        <div class="formBox" id="return_dt">
+                            <label for="return_dt">
+                                <div class="fa fa-calendar"></div>
+                                <input type="date" name="return_dt" placeholder="return date" />
+                            </label>
+                        </div>
+                        
+                        <div class="col">
+                            <label for="num_adults">
+                                <div class="fa fa-male"></div>
+        
+                                <select name="num_adults" id="num_adults_select">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            
+                            </label>
+                        </div>
+                        <div class="formPrice">
+                            <label for="price" title="Max. price per person">
+                                <p class="budget">Whats your budget:</p>
+                                <p class="price"></p>
+                            </label>
+                        
+                            <div class="sliderUI"><p></p></div>
+                        </div>
+                        
+                        <div class="col buttons">
+                            <input type="reset" name="btnReset" id="btnReset" value="Reset" />
+                            <input type="submit" name="btnSubmit" id="btnSubmit" value="Submit" />
+                        </div>
+                    </form>
+				</div>
+            </section>
+            
+            
+            <footer class="foot">
+                <p>&copy; 2014 Chicken Stuff Inc.</p>
+                <div class="city"></div>
+            </footer>
+        </div>
+    </body>
+</html>
